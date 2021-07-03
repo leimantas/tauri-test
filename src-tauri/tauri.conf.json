@@ -36,7 +36,7 @@
         "minimumSystemVersion": "",
         "useBootstrapper": false,
         "exceptionDomain": "",
-        "signingIdentity": "Eimantas Lapinskas",
+        "signingIdentity": "",
         "entitlements": null
       },
       "windows": {

@@ -36,7 +36,7 @@
         "minimumSystemVersion": "",
         "useBootstrapper": false,
         "exceptionDomain": "",
-        "signingIdentity": "",
+        "signingIdentity": "Eimantas Lapinskas",
         "entitlements": null
       },
       "windows": {
@@ -56,6 +56,7 @@
         "title": "Odoo Manager",
         "width": 800,
         "height": 600,
+        "maxWidth": 1200,
         "resizable": true,
         "fullscreen": false
       }

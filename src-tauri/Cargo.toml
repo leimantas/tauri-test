@@ -20,7 +20,9 @@ serde = { version = "1.0", features = ["derive"] }
 # tauri = { version = "1.0.0-beta.4", features = ["api-all"] }
 tauri = { git = "https://github.com/tauri-apps/tauri", branch = "dev", features = ["api-all", "menu"] }
 
-
 [features]
 default = [ "custom-protocol" ]
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[patch.crates-io]
+wry = { git = "https://github.com/tauri-apps/wry", branch = "dev" }

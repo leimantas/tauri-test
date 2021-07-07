@@ -2,13 +2,20 @@
   all(not(debug_assertions), target_os = "windows"),
   windows_subsystem = "windows"
 )]
-use tauri::{Menu, MenuItem};
+
+#[cfg(target_os = "macos")]
+mod menu;
 
 fn main() {
-  let menu = Menu::new().add_native_item(MenuItem::Quit);
+  let mut builder = tauri::Builder::default();
 
-  tauri::Builder::default()
-    .menu(menu)
+  #[cfg(target_os = "macos")]
+  {
+    // set menu only on macos
+    builder = builder.menu(menu::get_menu());
+  }
+
+  builder
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

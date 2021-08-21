@@ -1,6 +1,6 @@
 use tauri::{Menu, MenuItem, Submenu};
 
-pub fn get_menu() -> Menu<String> {
+pub fn get_menu() -> Menu {
   let my_app_menu = Menu::new()
     .add_native_item(MenuItem::Cut)
     .add_native_item(MenuItem::Copy)

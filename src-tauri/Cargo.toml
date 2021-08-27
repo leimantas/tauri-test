@@ -21,5 +21,5 @@ tauri = { version = "1.0.0-beta.8", features = ["api-all"] }
 default = [ "custom-protocol" ]
 custom-protocol = [ "tauri/custom-protocol" ]
 
-[patch.crates-io]
-# wry = { git = "https://github.com/tauri-apps/wry", branch = "dev" }
+[patch]
+crates-io = { }
